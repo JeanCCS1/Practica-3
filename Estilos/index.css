@@ -1,0 +1,839 @@
+/* ESTILOS PRINCIPALES + NAVBAR  INICIO*/
+:root {
+    --primary: #ffffff;
+    --white: rgb(152, 152, 152);
+    --gray: rgb(19, 73, 236);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary);
+    height: 100vh;
+}
+
+.nav {
+    padding: 10px 5%;
+}
+
+.nav__menu {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.nav__menu li {
+    list-style-type: none;
+}
+
+.nav__menu li:first-child {
+    display: block;
+    margin-right: auto;
+}
+
+.nav__menu a {
+    color: inherit;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.nav__menu a:hover {
+    color: rgb(19, 73, 236);
+}
+
+.nav__menu button {
+    color: #FFFF;
+    background-color: rgb(19, 73, 236);
+    border: 1px solid rgb(19, 73, 236);
+    box-shadow: rgb(19, 73, 236, 0.9);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.nav__menu button:hover {
+    color: rgb(19, 73, 236);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(19, 73, 236);
+}
+
+.menu__logo {
+    height: 30px;
+}
+
+.menu__logo img {
+    height: 100%;
+}
+
+
+/*SECTION cont_info */
+.cont_info {
+    width: 100%;
+    display: inline-flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.cont_info .info {
+    width: 60%;
+
+}
+
+.cont_info .info h1 {
+    font-weight: bold;
+    color: rgb(15, 59, 98);
+    margin-top: 90px;
+    margin-left: 170px;
+    font-size: 80px;
+}
+
+.cont_info .info p {
+    color: rgb(85, 85, 85);
+    margin-top: 50px;
+    margin-left: 160px;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.cont_info .info .text-icono {
+    display: inline-flex;
+    width: 100%;
+}
+
+.cont_info .info .text-icono .p1 {
+    font-size: 20px;
+    color: rgb(15, 59, 98);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.cont_info .info .text-icono .p1 span {
+    font-size: 30px;
+    padding: 8px 5px 8px 5px;
+    -webkit-box-reflect: 1;
+    border: 0.1px solid rgb(255, 204, 0, 0.2);
+    color: rgb(255, 217, 0);
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(255, 217, 0, 0.1);
+}
+
+.cont_info .info .text-icono .p2 {
+    font-size: 20px;
+    color: rgb(15, 59, 98);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.cont_info .info .text-icono .p2 span {
+    font-size: 30px;
+    padding: 8px 5px 8px 5px;
+    -webkit-box-reflect: 1;
+    border: 0.1px solid rgb(255, 204, 0, 0.2);
+    color: rgb(255, 217, 0);
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(255, 217, 0, 0.1);
+
+}
+
+.cont_info .info .shedule .p3 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: rgb(15, 59, 98);
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.cont_info .info .shedule .p3 span {
+    color: rgb(19, 73, 236);
+    margin-right: 12px;
+    padding: 8px;
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+}
+
+.cont_info .modal {
+    background-color: rgb(0, 136, 255);
+    position: absolute;
+    width: 1000px;
+    margin-top: 760px;
+    margin-left: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background: white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.cont_info .modal .arriba {
+    display: inline-flex;
+
+}
+
+.cont_info .modal .p4 {
+    color: rgb(15, 59, 98);
+}
+
+.cont_info .modal .p4 span {
+    color: rgb(19, 73, 236);
+    margin-right: 26px;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+}
+
+.cont_info .modal .p5 {
+
+    color: rgb(15, 59, 98);
+    margin-left: 140px;
+    margin-right: 140px;
+
+}
+
+.cont_info .modal .p5 span {
+    color: rgb(19, 73, 236);
+    margin-right: 26px;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+}
+
+.cont_info .modal .p6 {
+
+    color: rgb(15, 59, 98);
+    margin-right: 120px;
+
+}
+
+.cont_info .modal .p6 span {
+    color: rgb(19, 73, 236);
+    margin-right: 12px;
+    padding: 8px 8px 8px 8px;
+
+
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+}
+
+.cont_info .modal button {
+    color: #FFFF;
+    font-size: 15px;
+    background-color: rgb(19, 73, 236);
+    border: 1px solid rgb(19, 73, 236);
+    box-shadow: rgb(19, 73, 236, 0.9);
+    padding: 10px 40px;
+    border-radius: 8%;
+    margin-left: 50px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.cont_info .modal button:hover {
+    color: rgb(19, 73, 236);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(19, 73, 236);
+}
+
+.cont_info .modal .abajo {
+    display: inline-flex;
+
+}
+
+.cont_info .modal .abajo .p7 {
+    color: rgb(15, 59, 98);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.cont_info .modal .abajo .p8 {
+    color: rgb(15, 59, 98);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 140px;
+    font-size: 20px;
+}
+
+.cont_info .modal .abajo .p9 {
+    color: rgb(15, 59, 98);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+
+
+.cont_info .img-enfermera {
+    width: 50%;
+    border-radius: 8px;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background:rgb(0, 136, 255);
+    align-content: center;
+    padding-left: 150px;
+}
+
+.img_enfe{
+    height: 900px;
+    width: 80%
+
+}
+
+/*SECTION Slinder*/
+.banner_Vacunas {
+    width: 100%;
+    height: 50px;
+    padding: 5%;
+    background-image: url(/Imagenes/slider.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+/*SECTION Leyenda*/
+.Leyenda {
+    width: 100%;
+    display: flex;
+}
+
+.Leyenda .titulo{
+    width: 40%;
+}
+
+.Leyenda h1 {
+    font-weight: bold;
+    color: rgb(15, 59, 98);
+    margin-top: 90px;
+    margin-left: 140px;
+    font-size: 40px;
+}
+
+.Leyenda p {
+    color: rgb(85, 85, 85);
+    margin-top: 50px;
+    margin-left: 135px;
+    font-size: 22px;
+    line-height: 40px;
+}
+.Triangulo{
+    margin-left: 50%;
+    opacity: 0.1;
+}
+
+/*SECTION card*/
+.cards {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.cards .cardMinimize {
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-right: 50px;
+}
+
+.cards .cardMinimize:hover {
+    background-color: rgb(232, 248, 250);
+    box-shadow: 0 8px 32px 0 rgba(0, 106, 255, 0.37);
+}
+
+.cards .cardMinimize i {
+    margin: 15px;
+    font-size: 25px;
+    color: rgb(19, 73, 236);
+    padding: 10px;
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+    border-radius: 10px;
+}
+
+.cards .cardMinimize h1 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.cards .cardMinimize p {
+    font-size: 14px;
+    margin: 15px;
+}
+
+/*SECTION CLASS-img2 INICIO*/
+.Infor_2 {
+    width: 100%;
+    display: inline-flex;
+    margin: 30px 0px;
+
+}
+
+.Infor_2 .texto-Version-movil {
+    display: none;
+}
+
+.Infor_2 .imgEnfermera2 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Imagenes/Enfermera_sec2.png);
+    margin-top: 80px;
+    margin-right: 80px;
+}
+
+.Infor_2 .texto h1 {
+    font-weight: bold;
+    color: rgb(15, 59, 98);
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.Infor_2 .texto p {
+    color: rgb(85, 85, 85);
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 22px;
+    /*separacion del texto en vertical*/
+    line-height: 30px;
+    margin-bottom: 70px;
+}
+
+/*Acordeones*/
+/***********/
+.Infor_2 .texto .Submenu {
+    margin-left: 70px;
+    margin-right: 50px;
+
+    background-color: #ffffff;
+}
+
+.Infor_2 .texto .Submenu .acordeon {
+    background-color: #ffffff;
+    color: rgb(15, 59, 98);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.Infor_2 .texto .Submenu .acordeon:hover {
+    color: rgb(19, 73, 236);
+}
+
+
+.Infor_2 .texto .Submenu i {
+    float: right;
+    font-size: 25px;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+    border-radius: 10px;
+}
+
+.Infor_2 .texto .Submenu span {
+    font-size: 25px;
+    color: rgb(19, 73, 236);
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+    border-radius: 10px;
+}
+
+
+/*SECTION CLASS-img3 INICIO*/
+.Contact_sec {
+    width: 100%;
+    display: inline-flex;
+}
+
+.Contact_sec .texto3-version-movil {
+    display: none;
+}
+
+.Contact_sec .texto3 {
+    width: 60%;
+    justify-content: center;
+}
+
+.Contact_sec .texto3 h1 {
+    font-weight: bold;
+    color: rgb(15, 59, 98);
+    margin-top: 90px;
+    margin-left: 90px;
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+.Contact_sec .texto3 p {
+    color: rgb(85, 85, 85);
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 22px;
+    /*separacion del texto en vertical*/
+    line-height: 30px;
+    margin-bottom: 70px;
+}
+
+/*cajitas contacto*/
+/******************/
+.Contact_sec .cajas-version-movil {
+    display: none;
+}
+
+.Contact_sec .texto3 .cajas {
+    display: inline-flex;
+    margin-left: 120px;
+    margin-bottom: 35px;
+}
+
+.Contact_sec .texto3 .cajita {
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    margin-right: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 4px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.Contact_sec .texto3 .cajita .infor {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.Contact_sec .texto3 .cajita .infor i {
+    color: blue;
+    height: 50px;
+    font-size: 35px;
+    padding: 10px;
+    box-shadow: 0px 15px rgb(255, 217, 0, 0.05);
+    background-color: rgb(15, 59, 98, 0.1);
+    border-radius: 10px;
+}
+
+.Contact_sec .texto3 .cajita .infor p {
+    color: rgb(15, 59, 98);
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 1px;
+    margin-left: 25px;
+
+}
+
+.Contact_sec .texto3 .cajita .infor span {
+    color: rgb(85, 85, 85);
+    margin-left: 1px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.Contact_sec .texto3 .cajita button {
+    color: #FFFF;
+    font-size: 15px;
+    background-color: rgb(19, 73, 236);
+    border: 1px solid rgb(19, 73, 236);
+    box-shadow: rgb(19, 73, 236, 0.9);
+    margin-left: 45px;
+    margin-bottom: 10px;
+    padding: 10px 35px;
+    border-radius: 8%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.Contact_sec .texto3 .cajita button:hover {
+    color: rgb(19, 73, 236);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(19, 73, 236);
+}
+
+.Contact_sec .imgEnfermero {
+    width: 40%;
+    height: 740px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/Imagenes/Enfermero.png);
+    margin-top: 200px;
+}
+
+/*FOOTER INICIO*/
+footer {
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 100px;
+    background-color: rgb(240, 241, 255);
+}
+
+footer .arriba {
+    width: 100%;
+    display: inline-flex;
+}
+
+footer .titulo {
+    width: 50%;
+    margin-left: 100px;
+}
+
+footer .titulo h1 {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(19, 73, 236);
+}
+
+footer .titulo p {
+    color: rgb(85, 85, 85);
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer .lista {
+    display: inline-flex;
+    width: 50%;
+    line-height: 50px;
+}
+
+footer .lista .L-1 ul {
+    margin-right: 100px;
+    list-style: none;
+    font-weight: lighter;
+}
+
+footer .lista .L-1 h1 {
+    margin-top: 11px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(15, 51, 158, 0.995);
+}
+
+footer .lista .L-2 ul {
+    margin-right: 100px;
+    list-style: none;
+    font-weight: lighter;
+}
+
+footer .lista .L-2 h1 {
+    margin-top: 11px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(15, 51, 158, 0.995);
+}
+
+footer .lista .L-3 ul {
+    margin-right: 60px;
+    list-style: none;
+    font-weight: lighter;
+}
+
+footer .lista .L-3 h1 {
+    margin-top: 11px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(15, 51, 158, 0.995);
+}
+
+footer .abajo {
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(240, 241, 255);
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+footer .abajo .p1 {
+    margin-left: 100px;
+    font-weight: bold;
+    color: rgb(167, 167, 167);
+}
+
+footer .abajo .p2 {
+    margin-left: 600px;
+    font-weight: bold;
+    color: rgb(167, 167, 167);
+}
+
+@media only screen and (max-width: 600px) {
+    footer .arriba {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 0px;
+    }
+
+    footer .arriba .titulo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    footer .arriba .titulo h1 {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: auto;
+        margin-top: 0px;
+        font-weight: bold;
+        font-size: 35px;
+        color: rgb(19, 73, 236);
+    }
+
+    footer .arriba .titulo p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        color: rgb(85, 85, 85);
+        font-size: 22px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    footer .arriba .lista {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-left: 44px;
+        margin-right: 0px;
+    }
+
+    footer .arriba .lista .L-1 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    footer .arriba .lista .L-1 .line {
+        width: 100%;
+        height: 10px;
+        background-color: blue;
+        border-radius: 40px;
+    }
+
+    footer .arriba .lista .L-1 ul {
+        font-weight: 400;
+    }
+
+    footer .arriba .lista .L-1 ul li:hover {
+        color: blue;
+    }
+
+    footer .arriba .lista .L-2 .line {
+        width: 100%;
+        height: 10px;
+        background-color: blue;
+        border-radius: 40px;
+    }
+
+    footer .arriba .lista .L-2 ul {
+        font-weight: 400;
+    }
+
+    footer .arriba .lista .L-2 ul li:hover {
+        color: blue;
+    }
+
+    footer .arriba .lista .L-3 .line {
+        width: 100%;
+        height: 10px;
+        background-color: blue;
+        border-radius: 40px;
+    }
+
+    footer .arriba .lista .L-3 ul {
+        font-weight: 400;
+    }
+
+    footer .arriba .lista .L-3 ul li:hover {
+        color: blue;
+    }
+
+    footer .abajo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+    }
+
+    footer .abajo .p1 {
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        padding: 0;
+        font-weight: bold;
+        color: rgb(167, 167, 167);
+    }
+
+    footer .abajo .p2 {
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+        font-weight: bold;
+        color: rgb(167, 167, 167);
+    }
+
+    footer .abajo .p2:hover {
+        color: blue;
+    }
+
+    footer .autor {
+        background-color: black;
+        padding: 20px;
+    }
+
+    footer .autor .by {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(167, 167, 167);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    footer .autor .by:hover {
+        color: aqua;
+    }
+}
